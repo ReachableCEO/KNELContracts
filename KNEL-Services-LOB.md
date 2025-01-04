@@ -18,3 +18,9 @@ In addition to all of the services KNEL provides (generally) to all the nom core
 - EzEDA imstancr (compute / storage)
 - Nvidia cluster 
 - 
+
+## Per component offerings
+
+
+| LOB business specific application compute/storage capacity on the KNEL Coolify bizapp instance. 
+- Easy Appointments
