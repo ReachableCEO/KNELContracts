@@ -14,7 +14,7 @@ set -euo pipefail
 
 COOLIFY_TO_ALL="src/services-coolify-techops-all.md"
 
-rm $COOLIFY_TO_ALL
+rm $COOLIFY_TO_ALL || true
 echo "# Services hosted in KNEL Coolify Techops Instance, offered to all TSYS Group components" >> $COOLIFY_TO_ALL
 #Table heading
 echo " " >> $COOLIFY_TO_ALL
@@ -23,32 +23,34 @@ echo "|---|---|---|" >> $COOLIFY_TO_ALL
 #Table rows
 IFS=$'\n\t'
 for service in \
-$(cat "Coolify-Techops-AllServices.csv"); do
+$(cat "service-csv/services-coolify-techops-all.csv"); do
 export FUNCTION="$(echo $service|awk -F ',' '{print $1}')"
 export VENDOR="$(echo $service|awk -F ',' '{print $2}')"
 export INSTANCE="$(echo $service|awk -F ',' '{print $3}')"
 echo "|$FUNCTION|$VENDOR|$INSTANCE|" >> $COOLIFY_TO_ALL
 done
 
-rm src/services-coolify-techops-lob.md
-echo "# Services hosted in KNEL Coolify Techops Instance, offered to all TSYS Group components" >> src/services-coolify-lob.md
+COOLIFY_TO_LOB="src/services-coolify-techops-lob.md"
+
+rm $COOLIFY_TO_LOB || true
+echo "# Services hosted in KNEL Coolify Techops Instance, offered to certain TSYS Group components under bespoke arrangement" >> $COOLIFY_TO_LOB
 #Table heading
-echo " " >> src/services-coolify-techops-lob.md
-echo "|Function|Vendor|Instance|" >> src/services-coolify-techops-lob.md
-echo "|---|---|---|" >> src/services-coolify-techops-lob.md
+echo " " >> $COOLIFY_TO_LOB
+echo "|Function|Vendor|Instance|" >> $COOLIFY_TO_LOB
+echo "|---|---|---|" >> $COOLIFY_TO_LOB
 #Table rows
 IFS=$'\n\t'
 for service in \
-$(cat "Coolify-Techops-LOBServices.csv"); do
+$(cat "service-csv/services-coolify-techops-lob.csv"); do
 export FUNCTION="$(echo $service|awk -F ',' '{print $1}')"
 export VENDOR="$(echo $service|awk -F ',' '{print $2}')"
 export INSTANCE="$(echo $service|awk -F ',' '{print $3}')"
-echo "|$FUNCTION|$VENDOR|$INSTANCE|" >> src/services-coolify-techops-lob.md
+echo "|$FUNCTION|$VENDOR|$INSTANCE|" >> $COOLIFY_TO_LOB
 done
 
-COOLIFY_RD_ALL="src/services-coolify-rand-all.md"
+COOLIFY_RD_ALL="src/services-coolify-randd-all.md"
 
-rm $COOLIFY_RD_ALL
+rm $COOLIFY_RD_ALL || true
 echo "# Services hosted in KNEL Coolify R&D Instance, offered to all TSYS Group components" >> $COOLIFY_RD_ALL
 #Table heading
 echo " " >> $COOLIFY_RD_ALL
@@ -57,34 +59,35 @@ echo "|---|---|---|" >> $COOLIFY_RD_ALL
 #Table rows
 IFS=$'\n\t'
 for service in \
-$(cat "Coolify-Techops-LOBServices.csv"); do
+$(cat "service-csv/services-coolify-randd-all.csv"); do
 export FUNCTION="$(echo $service|awk -F ',' '{print $1}')"
 export VENDOR="$(echo $service|awk -F ',' '{print $2}')"
 export INSTANCE="$(echo $service|awk -F ',' '{print $3}')"
 echo "|$FUNCTION|$VENDOR|$INSTANCE|" >> $COOLIFY_RD_ALL
 done
 
-COOLIFY_RD_LOB="src/services-coolify-rand-lob.md"
+COOLIFY_RD_LOB="src/services-coolify-randd-lob.md"
 
-rm src/services-coolify-randd-lob.md
-echo "# Services hosted in KNEL Coolify R&D Instance, offered to certain TSYS Group components under bespoke arrangement" >> src/services-coolify-randd-lob.md
+rm $COOLIFY_RD_LOB || true
+echo "# Services hosted in KNEL Coolify R&D Instance, offered to certain TSYS Group components under bespoke arrangement" >> $COOLIFY_RD_LOB
 #Table heading
-echo " " >> src/services-coolify-randd-lob.md
-echo "|Function|Vendor|Instance|" >> src/services-coolify-randd-lob.md
-echo "|---|---|---|" >> src/services-coolify-randd-lob.md
+echo " " >> $COOLIFY_RD_LOB
+echo "|Function|Vendor|Instance|" >> $COOLIFY_RD_LOB
+echo "|---|---|---|" >> $COOLIFY_RD_LOB
 #Table rows
 IFS=$'\n\t'
 for service in \
-$(cat "services-coolify-rand-lob.csv"); do
+$(cat "service-csv/services-coolify-randd-lob.csv"); do
 export FUNCTION="$(echo $service|awk -F ',' '{print $1}')"
 export VENDOR="$(echo $service|awk -F ',' '{print $2}')"
 export INSTANCE="$(echo $service|awk -F ',' '{print $3}')"
-echo "|$FUNCTION|$VENDOR|$INSTANCE|" >> src/services-coolify-randd-lob.md
+echo "|$FUNCTION|$VENDOR|$INSTANCE|" >> $COOLIFY_RD_LOB
 done
+
 
 KNELDC_ALL="src/services-kneldc-all.md"
 
-rm $KNELDC_ALL
+rm $KNELDC_ALL || true
 echo "# Services hosted in KNEL Datacenter, offered to all TSYS Group components" >> $KNELDC_ALL
 #Table heading
 echo " " >> $KNELDC_ALL
@@ -93,7 +96,7 @@ echo "|---|---|---|" >> $KNELDC_ALL
 #Table rows
 IFS=$'\n\t'
 for service in \
-$(cat "services-kneldc-all.csv"); do
+$(cat "service-csv/services-kneldc-all.csv"); do
 export FUNCTION="$(echo $service|awk -F ',' '{print $1}')"
 export VENDOR="$(echo $service|awk -F ',' '{print $2}')"
 export INSTANCE="$(echo $service|awk -F ',' '{print $3}')"
@@ -102,7 +105,7 @@ done
 
 KNELDC_LOB="src/services-kneldc-lob.md"
 
-rm $KNELDC_LOB
+rm $KNELDC_LOB || true
 echo "# Services hosted in KNEL Datacenter, offered to certain TSYS Group components under bespoke arrangement" >> $KNELDC_LOB
 #Table heading
 echo " " >> $KNELDC_LOB
@@ -111,7 +114,7 @@ echo "|---|---|---|" >> $KNELDC_LOB
 #Table rows
 IFS=$'\n\t'
 for service in \
-$(cat "services-kneldc-lob.csv"); do
+$(cat "service-csv/services-kneldc-lob.csv"); do
 export FUNCTION="$(echo $service|awk -F ',' '{print $1}')"
 export VENDOR="$(echo $service|awk -F ',' '{print $2}')"
 export INSTANCE="$(echo $service|awk -F ',' '{print $3}')"
@@ -120,7 +123,7 @@ done
 
 CLOUDRON_ALL="src/services-cloudron-all.md"
 
-rm $CLOUDRON_ALL
+rm $CLOUDRON_ALL || true
 echo "# Services hosted in KNEL Cloudron, offered to all TSYS Group components" >> $CLOUDRON_ALL
 #Table heading
 echo " " >> $CLOUDRON_ALL
@@ -129,7 +132,7 @@ echo "|---|---|---|" >> $CLOUDRON_ALL
 #Table rows
 IFS=$'\n\t'
 for service in \
-$(cat "services-cloudron-all.csv"); do
+$(cat "service-csv/services-cloudron-all.csv"); do
 export FUNCTION="$(echo $service|awk -F ',' '{print $1}')"
 export VENDOR="$(echo $service|awk -F ',' '{print $2}')"
 export INSTANCE="$(echo $service|awk -F ',' '{print $3}')"
@@ -138,7 +141,7 @@ done
 
 CLOUDRON_LOB="src/services-cloudron-lob.md"
 
-rm $CLOUDRON_LOB
+rm $CLOUDRON_LOB || true
 echo "# Services hosted in KNEL Cloudron, offered to certain TSYS Group components under bespoke arrangement" >> $CLOUDRON_LOB
 #Table heading
 echo " " >>  $CLOUDRON_LOB
@@ -147,7 +150,7 @@ echo "|---|---|---|" >> $CLOUDRON_LOB
 #Table rows
 IFS=$'\n\t'
 for service in \
-$(cat "services-cloudron-lob.csv"); do
+$(cat "service-csv/services-cloudron-lob.csv"); do
 export FUNCTION="$(echo $service|awk -F ',' '{print $1}')"
 export VENDOR="$(echo $service|awk -F ',' '{print $2}')"
 export INSTANCE="$(echo $service|awk -F ',' '{print $3}')"
