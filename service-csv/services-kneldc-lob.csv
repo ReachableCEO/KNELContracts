@@ -1,2 +1,5 @@
-Storage/Compute/Network HPC Runtime Resources, SLURM, TBD
-Electronic Design Automation,[EzEDA](https://ezeda.org), TBD
+SLURM/BOINC Managed Electronic design automation/RF lab/environmental lab/network interop lab/General Storage Compute Network Capacity, Dell/Nvidia/Netapp/other, N/A
+Production Big data/ETL etc processing,details coming soon, N/A (KNEL DC VPN no external access)
+R&D Big data/ETL etc processing,details coming soon, N/A (KNEL DC VPN no external access)
+NFS/SMB Fileserver,details coming soon,N/A (KNEL DC VPN no external access)
+Value4Value,[Helipad](https://tryhelipad.com/),N/A(KNEL DC VPN no external access) 
