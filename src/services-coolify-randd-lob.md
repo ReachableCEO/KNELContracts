@@ -2,4 +2,4 @@
  
 |Function|Vendor|Instance|
 |---|---|---|
-|coming soon|coming soon|coming soon|
+|LOB bizapp compute/storage|TBD|TBD|

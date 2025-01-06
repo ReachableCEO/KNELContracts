@@ -2,4 +2,5 @@
  
 |Function|Vendor|Instance|
 |---|---|---|
-|coming soon|coming soon|coming soon|
+|Storage/Compute/Network HPC Runtime Resources| SLURM| TBD|
+|Electronic Design Automation|[EzEDA](https://ezeda.org)| TBD|

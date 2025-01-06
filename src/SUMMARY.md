@@ -2,7 +2,7 @@
 
 - [Introduction](./introduction.md)
 
-# Services Offered
+# Services Offered by Known Element Enterprises LLC
 
 - [Cloudron All TSYS Group](./services-cloudron-all.md)
 - [Cloudron LOB Bespoke](./services-cloudron-lob.md)
@@ -14,8 +14,11 @@
 - [KNEL Datacenter LOB Bespoke](./services-kneldc-lob.md)
 - [General Services](./services-general.md)
 
-# Terms
+# Standard legal terms and conditions
 
+# Contract Parties/Terms/Signature
+
+- [Contract Parties](./parties.md)
 - [Contract Length](./terms-length.md)
 - [Payment](./terms-payment.md)
 - [SLA/SLO](./terms-slaslo.md)

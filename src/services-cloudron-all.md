@@ -28,7 +28,6 @@
 |Time series/alert manager|[Promethus Alert Manager](https://prometheus.io/docs/alerting/latest/alertmanager/)|[KNEL PromAM](https://alertmanager.knownelement.com/login?redirect=/)|
 |Meeting coordination|[Rally](https://github.com/lukevella/rallly)|[KNEL Meeting Scheduler](https://companymeetings.knownelement.com/)|
 |Project/task management|[Redmine](https://www.redmine.org/)|[KNEL Project](https://projects.knownelement.com/)|
-|Webmail|[Roundcube](https://roundcube.net/)|[KNEL Webmail](https://webmail.knownelement.com/)|
 |Web Search|[SearXNG](https://docs.searxng.org/)|[KNEL Websearch](https://websearch.knownelement.com/)|
 |IT Asset Management|[Snipe-IT](https://snipeitapp.com/)|[KNEL Asset Management](https://assets.knownelement.com/login)|
 |Environment data management system|[Emoncms](https://emoncms.org/)|Being deployed to [KNEL Emoncms](https://emoncms.knownelement.com/)|
@@ -47,3 +46,4 @@
 |IP Address Management|[phpipam](https://phpipam.net/)|Being deployed to [KNEL IPAM](https://ipam.knownelement.com/)|
 |Mailing List|[phplist](https://www.phplist.com/)|Being deployed to [KNEL Mailing List](https://lists.knownelement.com)|
 |Web office|[Nextcloud](https://nextcloud.com/)|[KNEL Nextcloud](https://nextcloud.knownelement.com/)|
+|Webmail/Inbound/outbound E-mai (with 1gb quota aggregate across all mailboxes) (for non customer/corporate/non-automated use only)|[Roundcube](https://roundcube.net/)|[KNEL Webmail](https://webmail.knownelement.com/)|
