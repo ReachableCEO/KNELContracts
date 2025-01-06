@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MUSTACHE_PATH="../vendor/"
+MUSTACHE_PATH="./vendor/"
 
 for input_file in $(ls -1 contract-inputs/*.md); 
 do
