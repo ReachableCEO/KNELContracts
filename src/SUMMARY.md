@@ -12,6 +12,7 @@
 - [Coolify R&D LOB Bespoke](./services-coolify-randd-lob.md)
 - [KNEL Datacenter All TSYS Group](./services-kneldc-all.md)
 - [KNEL Datacenter LOB Bespoke](./services-kneldc-lob.md)
+- [General Services](./services-general.md)
 
 # Terms
 

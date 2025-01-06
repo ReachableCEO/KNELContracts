@@ -1,15 +1,5 @@
 #!/bin/bash
 
-set -euo pipefail
-
-# Put together the KNEL IT/business ops contract
-
-# Pull in contract variables
-# source ./KNEL-Contract-Variables.env
-
-# Run mustache to expand variables
-# ....
-
 # Render CSV to markdown table 
 
 COOLIFY_TO_ALL="src/services-coolify-techops-all.md"
