@@ -2,7 +2,7 @@
 
 - [Introduction](./introduction.md)
 
-# Services Offered by Known Element Enterprises LLC
+# Services Offered by Known Element Enterprises
 
 - [Cloudron All TSYS Group](./services-cloudron-all.md)
 - [Cloudron LOB Bespoke](./services-cloudron-lob.md)
